@@ -38,5 +38,5 @@ Check out the live demo:(http://localhost:5173)
 
 ## Showcase Video
 Check out the showcase video for a quick overview of the Beer Recipe App:
-[![Beer Recipe App Showcase](https://example.com/path/to/screenshot.png)](https://www.youtube.com/watch?v=your-youtube-video-id)
+[![Beer Recipe App Showcase](https://example.com/path/to/screenshot.png)](https://www.youtube.com/watch?v=8VoUNIIJIrT_Joqy)
 
