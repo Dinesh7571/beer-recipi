@@ -4,7 +4,7 @@ Welcome to the Beer Recipe App! This project is a simple React application that 
 
 ## Demo
 
-Check out the live demo: [Beer Recipe App](https://beerrecipi.netlify.app)
+### Check out the live demo: [Beer Recipe App](https://beerrecipi.netlify.app)
 
 ## Features
 
@@ -36,7 +36,4 @@ To set up this project locally on your PC, follow these steps:
 
 Check out the live demo:(http://localhost:5173)
 
-## Showcase Video
-Check out the showcase video for a quick overview of the Beer Recipe App:
-[![Beer Recipe App Showcase](https://example.com/path/to/screenshot.png)](https://www.youtube.com/watch?v=8VoUNIIJIrT_Joqy)
 
