@@ -1,0 +1,80 @@
+.container{
+  margin: 40px 0px;
+}
+.beer-container {
+    padding: 10px;
+    max-width: 800px;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .image_container{
+  display: flex;
+  justify-content:center;
+  background-color: #39acef;
+}
+  .beer-image {
+   padding: 20px 0px;
+    height:300px;
+    /* height: auto; */
+  }
+
+  .beer-details {
+    padding: 20px;
+    color: #333;
+  }
+
+  h1 {
+    color: #1e4363;
+  }
+
+  p {
+    color: #555;
+  }
+
+  .details-label {
+    font-weight: bold;
+    color: #1e4363;
+  }
+
+  .details-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .details-list li {
+    margin-bottom: 10px;
+  }
+
+  .food-pairing {
+    margin-top: 20px;
+  }
+
+  .food-pairing h2 {
+    color: #1e4363;
+  }
+
+  .food-pairing ul {
+    color: #555;
+  }
+
+  .brewers-tips {
+    margin-top: 20px;
+    color: #777;
+  }
+
+  .contributed-by {
+    color: #555;
+  }
+
+  @media only screen  and (max-width:600px) {
+    .beer-details{
+        margin: 20px;
+
+    } 
+
+   
+}
