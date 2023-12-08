@@ -2,11 +2,15 @@
 .articles {
     padding: 10px;
     display: grid;
-    max-width: 1200px;
+  
     margin-inline: auto;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
-    
- 
+    gap: 24px; 
   }
+
+  @media only screen  and (min-width:600px) {
+    .articles{
+        width: 1200px;
+    } 
+}

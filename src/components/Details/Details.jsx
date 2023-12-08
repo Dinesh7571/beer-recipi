@@ -20,7 +20,7 @@ const Details = () => {
 
 
   return (
-    <div className='container'>
+    <div >
       {isLoading ? (
         <h1>Loading...</h1>
       ) : error ? (

@@ -3,6 +3,7 @@ import Card from './Card';
 import useData from '../../Hooks/useData';
 import Searchbar from '../Searchbar/Searchbar';
 
+import './Cardlist.css'
 const CardList = () => {
   const { data, error, isLoading } = useData();
   console.log('Data:', data);
