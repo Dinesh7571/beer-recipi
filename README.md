@@ -34,6 +34,6 @@ To set up this project locally on your PC, follow these steps:
    ```bash
   npm run dev
 
-Check out the live demo:(http://localhost:5173)
+Check out the live demo:(https://beerrecipi.netlify.app/)
 
 
