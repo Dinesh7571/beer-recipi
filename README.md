@@ -19,7 +19,7 @@ To set up this project locally on your PC, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/beer-recipe-app.git
+   git clone https://github.com/Dinesh7571/beer-recipi
 
 2. Navigate to the project directory:
 
@@ -32,8 +32,7 @@ To set up this project locally on your PC, follow these steps:
 4. Run the development server:
 
    ```bash
-  npm run dev
-
-Check out the live demo:(http://localhost:5173)
+   npm run dev
+Check out the live demo:(https://beerrecipi.netlify.app/)
 
 
