@@ -2,7 +2,8 @@
 .articles {
     padding: 10px;
     display: grid;
-  
+
+   
     margin-inline: auto;
     padding-inline: 24px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));

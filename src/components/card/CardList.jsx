@@ -3,7 +3,8 @@ import Card from './Card';
 import useData from '../../Hooks/useData';
 import Searchbar from '../Searchbar/Searchbar';
 
- import './CardList.css'
+import './CardList.css'
+
 const CardList = () => {
   const { data, error, isLoading } = useData();
   console.log('Data:', data);
@@ -26,7 +27,8 @@ const CardList = () => {
   
 
   return (
-    <div className='container'>
+    <div className='main'>
+      <div>
       <Searchbar
         value={searchTerm}
        onChange={(e) => setSearchTerm(e.target.value)}
@@ -63,6 +65,7 @@ const CardList = () => {
       
        
       </section>
+      </div>
     </div>
   );
 };
