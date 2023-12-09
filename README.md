@@ -19,7 +19,7 @@ To set up this project locally on your PC, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/beer-recipe-app.git
+   git clone https://github.com/Dinesh7571/beer-recipi
 
 2. Navigate to the project directory:
 
