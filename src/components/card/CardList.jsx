@@ -1,11 +1,9 @@
-
 import React, { useState, useEffect } from 'react';
 import Card from './Card';
 import useData from '../../Hooks/useData';
 import Searchbar from '../Searchbar/Searchbar';
 
-import './CardList.css';
-
+ import './CardList.css'
 const CardList = () => {
   const { data, error, isLoading } = useData();
   console.log('Data:', data);
@@ -21,6 +19,8 @@ const CardList = () => {
     setSuggestions(filteredSuggestions);
   }, [searchTerm, data]);
 
+
+
   const handleClick = () => {
     // Only filter the data when the button is clicked and there is a search term
     if (searchTerm) {
@@ -32,28 +32,39 @@ const CardList = () => {
     }
   };
 
+  
+
   return (
     <div className='container'>
       <Searchbar
         value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+       onChange={(e) => setSearchTerm(e.target.value)}
         onClick={handleClick}
         suggestions={suggestions}
       />
-      <section className='articles'>
-        {!isLoading && searchTerm && searchResults.length === 0 ? (
-          <p>No results found</p>
+      <section className="articles">
+         
+      {isLoading ? (
+          <h1>Loading...</h1>
+        ) : error ? (
+          <p>Error loading data: {error.message}</p>
         ) : (
-          (searchTerm && searchResults.length > 0 ? searchResults : data)?.map((item) => (
-            <Card
-              key={item.id}
-              name={item.name}
-              tagline={item.tagline}
-              image={item.image_url}
-              to={`/details/${item.id}`}
-            />
-          ))
+          (searchTerm && searchResults.length > 0 ? searchResults : data)?.map(
+            (item) => (
+              <Card
+                key={item.id}
+                name={item.name}
+                tagline={item.tagline}
+                image={item.image_url}
+                to={`/details/${item.id}`}
+              />
+            )
+          )
         )}
+        {!isLoading && searchTerm && searchResults.length === 0 && (
+          <p>No results found</p>
+        )}
+       
       </section>
     </div>
   );
