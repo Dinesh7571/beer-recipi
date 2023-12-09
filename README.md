@@ -32,8 +32,7 @@ To set up this project locally on your PC, follow these steps:
 4. Run the development server:
 
    ```bash
-  npm run dev
-
+   npm run dev
 Check out the live demo:(https://beerrecipi.netlify.app/)
 
 
