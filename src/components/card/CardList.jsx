@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import Card from './Card';
 import useData from '../../Hooks/useData';
 import Searchbar from '../Searchbar/Searchbar';
@@ -9,17 +9,7 @@ const CardList = () => {
   console.log('Data:', data);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [suggestions, setSuggestions] = useState([]);
-
-  useEffect(() => {
-    // Update suggestions based on the current input value
-    const filteredSuggestions = data?.filter((item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setSuggestions(filteredSuggestions);
-  }, [searchTerm, data]);
-
-
+  const [click, setClick] = useState(false);
 
   const handleClick = () => {
     // Only filter the data when the button is clicked and there is a search term
@@ -27,8 +17,9 @@ const CardList = () => {
       const results = data?.filter((item) =>
         item.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
-      console.log('Search results:', results);
+     
       setSearchResults(results);
+      setClick(true)
     }
   };
 
@@ -40,8 +31,11 @@ const CardList = () => {
         value={searchTerm}
        onChange={(e) => setSearchTerm(e.target.value)}
         onClick={handleClick}
-        suggestions={suggestions}
+       
       />
+        {!isLoading && searchTerm && searchResults.length == 0 && click && (
+          <p>No results found</p>
+        )}
       <section className="articles">
          
       {isLoading ? (
@@ -60,10 +54,13 @@ const CardList = () => {
               />
             )
           )
-        )}
-        {!isLoading && searchTerm && searchResults.length === 0 && (
-          <p>No results found</p>
-        )}
+        )
+        
+        }
+
+
+
+      
        
       </section>
     </div>
